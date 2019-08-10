@@ -1,31 +1,62 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+#######################################    PROPERTIES
+local.properties
 
-### STS ###
+
+#######################################    JAVA
+*.class
+*.ear
+*.jar
+*.log
+*.nar
+*.rar
+*.tar.gz
+*.war
+*.zip
+
+
+#######################################    MAVEN
+!/.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
+pom.xml.*
+target/
+.mvn/
+
+
+#######################################    IDE
+#####    Eclipse
+*.bak
+*.nib
+*.swp
+*.tmp
 .apt_generated
 .classpath
 .factorypath
+.metadata
+
 .project
 .settings
 .springBeans
 .sts4-cache
+bin/
+tmp/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+#####    IntelliJ
 *.iml
 *.ipr
+*.iws
+.idea/
+.idea_modules/
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
+#####    NetBeans
 /.nb-gradle/
-build/
+/build/
+/dist/
+/nbbuild/
+/nbdist/
+/nbproject/private/
 
-### VS Code ###
-.vscode/
+
+#######################################    MISC.
+~$*.xlsx
+HELP.md
