@@ -1,6 +1,5 @@
 package com.stated.royally.config;
 
-import kong.unirest.JacksonObjectMapper;
 import kong.unirest.Unirest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +28,15 @@ public class UniConfig {
         log.info("Bearer Token is = {}", token);
 
         Unirest.config()
-                .setObjectMapper(new JacksonObjectMapper())
-                .setDefaultHeader("Authorization", token);
+                .setObjectMapper(new CustomObjectMapper())
+                .setDefaultHeader("Authorization", token)
+                // For metrics
+                .instrumentWith(requestSummary -> {
+                    long startNanos = System.nanoTime();
+                    return (responseSummary,exception) -> log.info("path: {} status: {} time: {}",
+                            requestSummary.getRawPath(),
+                            responseSummary.getStatus(),
+                            System.nanoTime() - startNanos);
+                });
     }
 }
