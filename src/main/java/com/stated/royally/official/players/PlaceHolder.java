@@ -1,4 +1,4 @@
-package com.stated.royally.official.cards;
+package com.stated.royally.official.players;
 
 /**
  * TODO - Add Class Definition
