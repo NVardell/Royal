@@ -1,0 +1,84 @@
+{
+    "items": [
+        {
+            "tag": "#L0RYGQ9",
+            "name": "Nova l Aus",
+            "rank": 1,
+            "previousRank": 1,
+            "location": {
+                "id": 57000021,
+                "name": "Australia",
+                "isCountry": true,
+                "countryCode": "AU"
+            },
+            "clanScore": 27324,
+            "badgeId": 16000044,
+            "members": 49
+        },
+        {
+            "tag": "#8QQCY8GL",
+            "name": "Sandstorm Aus",
+            "rank": 2,
+            "previousRank": 2,
+            "location": {
+                "id": 57000021,
+                "name": "Australia",
+                "isCountry": true,
+                "countryCode": "AU"
+            },
+            "clanScore": 23254,
+            "badgeId": 16000097,
+            "members": 48
+        },
+        {
+            "tag": "#LY9U2C",
+            "name": "Aussie Royale",
+            "rank": 3,
+            "previousRank": 3,
+            "location": {
+                "id": 57000021,
+                "name": "Australia",
+                "isCountry": true,
+                "countryCode": "AU"
+            },
+            "clanScore": 23119,
+            "badgeId": 16000053,
+            "members": 50
+        },
+        {
+            "tag": "#YGP2CGV",
+            "name": "Aus CastleBlack",
+            "rank": 4,
+            "previousRank": 4,
+            "location": {
+                "id": 57000021,
+                "name": "Australia",
+                "isCountry": true,
+                "countryCode": "AU"
+            },
+            "clanScore": 21689,
+            "badgeId": 16000028,
+            "members": 47
+        },
+        {
+            "tag": "#89YVRV",
+            "name": "DBZ Saiyans",
+            "rank": 5,
+            "previousRank": 5,
+            "location": {
+                "id": 57000021,
+                "name": "Australia",
+                "isCountry": true,
+                "countryCode": "AU"
+            },
+            "clanScore": 21049,
+            "badgeId": 16000106,
+            "members": 38
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "after": "eyJwb3MiOjV9"
+        }
+    }
+}

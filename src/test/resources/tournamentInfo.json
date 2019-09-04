@@ -1,0 +1,31 @@
+{
+    "tag": "#22YYYQCQ",
+    "type": "open",
+    "status": "inPreparation",
+    "creatorTag": "#Y02Y2GPU8",
+    "name": "free fire",
+    "levelCap": 10,
+    "firstPlaceCardPrize": 0,
+    "capacity": 1,
+    "maxCapacity": 500,
+    "preparationDuration": 3600,
+    "duration": 86400,
+    "createdTime": "20190817T050424.000Z",
+    "membersList": [
+    {
+        "tag": "#Y02Y2GPU8",
+        "name": "FERNANGAMES YT",
+        "score": 0,
+        "rank": 1,
+        "clan":
+        {
+            "tag": "#P8JG9YYJ",
+            "name": "MK",
+            "badgeId": 16000154
+        }
+    }],
+    "gameMode":
+    {
+        "id": 72000027
+    }
+}

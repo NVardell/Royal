@@ -1,0 +1,195 @@
+{
+    "items": [
+    {
+        "tag": "#22YYYQCQ",
+        "type": "open",
+        "status": "inPreparation",
+        "creatorTag": "#Y02Y2GPU8",
+        "name": "free fire",
+        "levelCap": 10,
+        "firstPlaceCardPrize": 0,
+        "capacity": 1,
+        "maxCapacity": 500,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190817T050424.000Z",
+        "gameMode":
+        {
+            "id": 72000027
+        }
+    },
+    {
+        "tag": "#2PYUY28G",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#9LU22J9J",
+        "name": "Free Rage",
+        "levelCap": 10,
+        "firstPlaceCardPrize": 0,
+        "capacity": 29,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190816T063757.000Z",
+        "gameMode":
+        {
+            "id": 72000073
+        }
+    },
+    {
+        "tag": "#2R0J9VUQ",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#8Y9Y89082",
+        "name": "Free fire",
+        "description": "Ninguna clase de barbaro",
+        "levelCap": 9,
+        "firstPlaceCardPrize": 0,
+        "capacity": 7,
+        "maxCapacity": 200,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190816T223321.000Z",
+        "gameMode":
+        {
+            "id": 72000005
+        }
+    },
+    {
+        "tag": "#2P8G2QLJ",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#YVPGQVQ0",
+        "name": "Free Free Free",
+        "levelCap": 9,
+        "firstPlaceCardPrize": 0,
+        "capacity": 17,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190817T003422.000Z",
+        "gameMode":
+        {
+            "id": 72000009
+        }
+    },
+    {
+        "tag": "#22Y9LPLG",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#JYQRQ2QP",
+        "name": "free",
+        "description": "latihan bareng",
+        "levelCap": 11,
+        "firstPlaceCardPrize": 0,
+        "capacity": 7,
+        "maxCapacity": 50,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190816T150342.000Z",
+        "gameMode":
+        {
+            "id": 72000027
+        }
+    },
+    {
+        "tag": "#2R0JP8Q2",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#QGJGJYLC",
+        "name": "free",
+        "levelCap": 9,
+        "firstPlaceCardPrize": 0,
+        "capacity": 16,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190816T223329.000Z",
+        "gameMode":
+        {
+            "id": 72000027
+        }
+    },
+    {
+        "tag": "#2PYVYUU0",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#QG98GYPC",
+        "name": "free tournament",
+        "description": "1,000 players , level 9 towers free for all.",
+        "levelCap": 9,
+        "firstPlaceCardPrize": 0,
+        "capacity": 8,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190817T052342.000Z",
+        "gameMode":
+        {
+            "id": 72000027
+        }
+    },
+    {
+        "tag": "#2880PRJG",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#99JUUCJ9V",
+        "name": "free chek thé desc",
+        "description": "This IS a free tournament plz tryhard 5€/5$ for the #1 YT Merkur Storm",
+        "levelCap": 9,
+        "firstPlaceCardPrize": 0,
+        "capacity": 110,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190816T200604.000Z",
+        "gameMode":
+        {
+            "id": 72000009
+        }
+    },
+    {
+        "tag": "#2P8G0Q2G",
+        "type": "open",
+        "status": "inProgress",
+        "creatorTag": "#PC8CPUVCY",
+        "name": "free",
+        "levelCap": 13,
+        "firstPlaceCardPrize": 0,
+        "capacity": 16,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190816T235345.000Z",
+        "gameMode":
+        {
+            "id": 72000027
+        }
+    },
+    {
+        "tag": "#28820RLV",
+        "type": "passwordProtected",
+        "status": "inProgress",
+        "creatorTag": "#9JR2R0JVL",
+        "name": "FREE FIRE",
+        "description": "LOS QUE JUEGAN FREE FIRE SIGAN ME ^μฯÇH€VÎฯμ^",
+        "levelCap": 9,
+        "firstPlaceCardPrize": 0,
+        "capacity": 6,
+        "maxCapacity": 1000,
+        "preparationDuration": 3600,
+        "duration": 86400,
+        "createdTime": "20190817T012122.000Z",
+        "gameMode":
+        {
+            "id": 72000005
+        }
+    }],
+    "paging":
+    {
+        "cursors":
+        {
+            "after": "eyJwb3MiOjEwfQ"
+        }
+    }
+}

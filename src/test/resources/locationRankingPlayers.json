@@ -1,0 +1,94 @@
+{
+    "items": [
+        {
+            "tag": "#GY2UJYP",
+            "name": "SB",
+            "expLevel": 13,
+            "trophies": 6880,
+            "rank": 1,
+            "previousRank": 1,
+            "clan": {
+                "tag": "#PGVR08JC",
+                "name": "Legéndary 50",
+                "badgeId": 16000068
+            },
+            "arena": {
+                "id": 54000020,
+                "name": "Royal Champion"
+            }
+        },
+        {
+            "tag": "#CG980CR",
+            "name": "Gally❤Giant",
+            "expLevel": 13,
+            "trophies": 6427,
+            "rank": 2,
+            "previousRank": 70,
+            "clan": {
+                "tag": "#PC9UVGRQ",
+                "name": "Halocline",
+                "badgeId": 16000023
+            },
+            "arena": {
+                "id": 54000019,
+                "name": "Grand Champion"
+            }
+        },
+        {
+            "tag": "#QQUUCL",
+            "name": "KFC",
+            "expLevel": 13,
+            "trophies": 6304,
+            "rank": 3,
+            "previousRank": 5,
+            "clan": {
+                "tag": "#PLLYQ8QJ",
+                "name": "CWA YouTube",
+                "badgeId": 16000009
+            },
+            "arena": {
+                "id": 54000018,
+                "name": "Champion"
+            }
+        },
+        {
+            "tag": "#9J9L08",
+            "name": "Az",
+            "expLevel": 13,
+            "trophies": 6287,
+            "rank": 4,
+            "previousRank": 115,
+            "clan": {
+                "tag": "#PGVR08JC",
+                "name": "Legéndary 50",
+                "badgeId": 16000068
+            },
+            "arena": {
+                "id": 54000018,
+                "name": "Champion"
+            }
+        },
+        {
+            "tag": "#UYJR0YVG",
+            "name": "＠(￣-￣)＠",
+            "expLevel": 13,
+            "trophies": 6267,
+            "rank": 5,
+            "previousRank": 14,
+            "clan": {
+                "tag": "#20V0RGUU",
+                "name": "Nova I 大唐天子 湖南",
+                "badgeId": 16000044
+            },
+            "arena": {
+                "id": 54000018,
+                "name": "Champion"
+            }
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "after": "eyJwb3MiOjV9"
+        }
+    }
+}

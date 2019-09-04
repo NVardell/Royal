@@ -1,0 +1,79 @@
+{
+    "items": [
+        {
+            "tag": "#8GQGUJ",
+            "name": "Undefined",
+            "rank": 1,
+            "previousRank": 3,
+            "location": {
+                "id": 57000001,
+                "name": "North America",
+                "isCountry": false
+            },
+            "clanScore": 60228,
+            "badgeId": 16000077,
+            "members": 46
+        },
+        {
+            "tag": "#9Q98LLP8",
+            "name": "Arcanum NA",
+            "rank": 2,
+            "previousRank": 2,
+            "location": {
+                "id": 57000001,
+                "name": "North America",
+                "isCountry": false
+            },
+            "clanScore": 59799,
+            "badgeId": 16000107,
+            "members": 49
+        },
+        {
+            "tag": "#29YU089C",
+            "name": "Twitch SirTagCR",
+            "rank": 3,
+            "previousRank": 6,
+            "location": {
+                "id": 57000001,
+                "name": "North America",
+                "isCountry": false
+            },
+            "clanScore": 59519,
+            "badgeId": 16000142,
+            "members": 50
+        },
+        {
+            "tag": "#9YU2PQRV",
+            "name": "Team Liquid",
+            "rank": 4,
+            "previousRank": 7,
+            "location": {
+                "id": 57000001,
+                "name": "North America",
+                "isCountry": false
+            },
+            "clanScore": 59394,
+            "badgeId": 16000063,
+            "members": 50
+        },
+        {
+            "tag": "#PGUGCRQ9",
+            "name": "FVESL KIX MY™️",
+            "rank": 5,
+            "previousRank": 5,
+            "location": {
+                "id": 57000001,
+                "name": "North America",
+                "isCountry": false
+            },
+            "clanScore": 59314,
+            "badgeId": 16000096,
+            "members": 46
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "after": "eyJwb3MiOjV9"
+        }
+    }
+}
