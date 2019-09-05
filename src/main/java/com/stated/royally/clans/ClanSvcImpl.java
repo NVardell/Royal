@@ -1,4 +1,4 @@
-package com.stated.royally.clan;
+package com.stated.royally.clans;
 
 import java.util.List;
 

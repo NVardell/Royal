@@ -1,4 +1,4 @@
-package com.stated.royally.clan;
+package com.stated.royally.clans;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

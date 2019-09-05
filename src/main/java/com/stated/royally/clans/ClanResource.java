@@ -1,4 +1,4 @@
-package com.stated.royally.clan;
+package com.stated.royally.clans;
 
 import kong.unirest.Unirest;
 import lombok.extern.slf4j.Slf4j;
