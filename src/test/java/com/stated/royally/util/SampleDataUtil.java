@@ -1,6 +1,7 @@
 package com.stated.royally.util;
 
 import com.google.gson.stream.JsonReader;
+import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,7 +19,7 @@ public class SampleDataUtil {
     public static JsonReader getReaderData(String data) throws FileNotFoundException {
         return new JsonReader(new FileReader(Objects.requireNonNull(SampleDataUtil.class.getClassLoader().getResource(data + ".json")).getFile()));
     }
-    public static File getData(String data) {
-        return new File(SampleDataUtil.class.getClassLoader().getResource(data + ".json").getFile());
+    public static File getData(String data) throws FileNotFoundException {
+        return ResourceUtils.getFile("classpath:" + data + ".json");
     }
 }
