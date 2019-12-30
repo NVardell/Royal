@@ -37,6 +37,7 @@
                 </configuration>
             </plugin>
 
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
@@ -45,13 +46,13 @@
                     <execution>
                         <id>obj-uptodate</id>
                         <goals>
-                            <goal>uptodate-properties</goal>
+                            <goal>uptodate-property</goal>
                         </goals>
                         <configuration>
                             <name>build.script</name>
                             <value>skip</value>
                             <else>prod</else>
-                            <fileset>
+                            <fileSet>
                                 <directory>${project.basedir}/src</directory>
                                 <outputDirectory>${project.basedir}/target/classes/static</outputDirectory>
                                 <includes>
@@ -62,14 +63,68 @@
                                     <from>*.*</from>
                                     <to>index.html</to>
                                 </mapper>
-                            </fileset>
+                            </fileSet>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
 
+
             <plugin>
-                
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>exec-web-install</id>
+                        <phase>initialize</phase>
+                        <configuration>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>install</argument>
+                                <argument>--production=false</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>exec-npm-build</id>
+                        <phase>compile</phase>
+                        <configuration>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>run</argument>
+                                <argument>build:${build.script}</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/classes/static</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>build</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
