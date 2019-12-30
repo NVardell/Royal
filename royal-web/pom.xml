@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>royal-web</name>
+    <packaging>jar</packaging>
+    <artifactId>royal-web</artifactId>
+    <version>${revision}</version>
+
+
+    <parent>
+        <groupId>com.stated</groupId>
+        <artifactId>royal-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../royal-parent/pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <sonar.sources>${project.basedir}/src</sonar.sources>
+        <sonar.javascript.file.suffixes>.js</sonar.javascript.file.suffixes>
+        <sonar.javascript.file.suffixes>.jsx</sonar.javascript.file.suffixes>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>build</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>obj-uptodate</id>
+                        <goals>
+                            <goal>uptodate-properties</goal>
+                        </goals>
+                        <configuration>
+                            <name>build.script</name>
+                            <value>skip</value>
+                            <else>prod</else>
+                            <fileset>
+                                <directory>${project.basedir}/src</directory>
+                                <outputDirectory>${project.basedir}/target/classes/static</outputDirectory>
+                                <includes>
+                                    <include>*/**</include>
+                                </includes>
+                                <mapper>
+                                    <type>merge</type>
+                                    <from>*.*</from>
+                                    <to>index.html</to>
+                                </mapper>
+                            </fileset>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                
+            </plugin>
+        </plugins>
+    </build>
+
+    
+</project>

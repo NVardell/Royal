@@ -5,11 +5,11 @@
 
     <name>Royally Stated</name>
     <description>Royal statistics for Clash Royale clan leaders.</description>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <groupId>com.stated</groupId>
     <artifactId>royally</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -18,7 +18,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <modules>
+        <module>royal-parent</module>
+        <module>royal-app</module>
+        <module>royal-rest</module>
+        <module>royal-web</module>
+    </modules>
+
     <properties>
+        <!--    APPLICATION PROPERTIES    -->
+        <revision>0.0.1-SNAPSHOT</revision>
+        <java.version>1.8</java.version>
+        <maven.install.version>2.5.2</maven.install.version>
+        <maven.deploy.version>2.8.2</maven.deploy.version>
         <!--    DEPENDENCY VERSIONS    -->
         <java.version>1.8</java.version>
         <gson.version>2.8.5</gson.version>
@@ -31,65 +43,28 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-        <!--    SPRING DEPENDENCIES    -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
 
-
-        <!--    REST CLIENT DEPENDENCIES    -->
-        <dependency>
-            <groupId>com.konghq</groupId>
-            <artifactId>unirest-java</artifactId>
-            <version>${unirest.version}</version>
-        </dependency>
-
-
-        <!--    TESTING DEPENDENCIES    -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <!--  Excluding duplicate JSONObject Class Def  -->
-                <exclusion>
-                    <groupId>org.skyscreamer</groupId>
-                    <artifactId>jsonassert</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-            <version>${hamcrest.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-
-        <!--    MISCELLANEOUS DEPENDENCIES    -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>${gson.version}</version>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
+            <!--  Skip installation of build-only POM  -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>${maven.install.version}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <!--  Skip deployment of build-only POM  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven.deploy.version}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>royal-rest</name>
+    <packaging>jar</packaging>
+    <artifactId>royal-rest</artifactId>
+    <version>${revision}</version>
+
+    <parent>
+        <groupId>com.stated</groupId>
+        <artifactId>royal-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../royal-parent/pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <!--    APPLICATION PROPERTIES    -->
+        <revision>0.0.1-SNAPSHOT</revision>
+        <java.version>1.8</java.version>
+        <maven.install.version>2.5.2</maven.install.version>
+        <maven.deploy.version>2.8.2</maven.deploy.version>
+        <!--    DEPENDENCY VERSIONS    -->
+        <java.version>1.8</java.version>
+        <gson.version>2.8.5</gson.version>
+        <hamcrest.version>1.3</hamcrest.version>
+        <jackson.version>2.10.0.pr1</jackson.version>
+        <lombok.version>1.18.8</lombok.version>
+        <unirest.version>2.3.14</unirest.version>
+        <!--    FILE ENCODINGS    -->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--    SPRING DEPENDENCIES    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+
+        <!--    REST CLIENT DEPENDENCIES    -->
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>${unirest.version}</version>
+        </dependency>
+
+
+        <!--    TESTING DEPENDENCIES    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <!--  Excluding duplicate JSONObject Class Def  -->
+                <exclusion>
+                    <groupId>org.skyscreamer</groupId>
+                    <artifactId>jsonassert</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!--    MISCELLANEOUS DEPENDENCIES    -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
