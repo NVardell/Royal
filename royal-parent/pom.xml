@@ -7,6 +7,7 @@
     <groupId>com.stated</groupId>
     <artifactId>royal-parent</artifactId>
     <version>${revision}</version>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -30,6 +31,13 @@
                 <groupId>com.stated</groupId>
                 <artifactId>royal-rest</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>org.jacoco.agent</artifactId>
+                <version>0.8.4</version>
+                <classifier>runtime</classifier>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
