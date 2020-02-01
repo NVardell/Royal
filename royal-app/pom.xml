@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>royal-app</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <artifactId>royal-app</artifactId>
 
     <parent>
