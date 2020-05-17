@@ -13,13 +13,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.time.Duration;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.is;
 
 /**
@@ -44,7 +44,7 @@ public class LastSeenTest {
 
 
     @Test
-    public void givenClan_mapToJavaObject_Gson() throws IOException {
+    public void givenClanJson_mapToJavaObject_withGson() throws IOException {
         Clan clan = mapper.readValue(SampleDataUtil.getData("clan"), Clan.class);
         assertThat(clan.getClanWarTrophies(), is(1635));
         assertThat(clan.getClanScore(), is(48489));
@@ -53,7 +53,7 @@ public class LastSeenTest {
 
 
     @Test
-    public void givenClan_mapToJavaObject_Jackson() throws IOException {
+    public void givenClanMemberJson_mapToJavaObject_withJackson() throws IOException {
         ClanMember member = mapper.readValue(SampleDataUtil.getData("clanMember"), ClanMember.class);
         assertThat(member.getDonations(), is(294));
         assertThat(member.getExpLevel(), is(13));
@@ -62,19 +62,10 @@ public class LastSeenTest {
 
     @Test
     public void zonedDateTimePatterns_new() {
-        String lastSeen = "20200516T203028.000Z"; // 4:30pm My Time
-
-        ZonedDateTime lastSeenTime = ZonedDateTime.parse(lastSeen, DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmss.SSSz"));
+        ZonedDateTime lastSeenTime = ZonedDateTime.parse("20200516T203028.000Z", DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmss.SSSz"));
         ZonedDateTime currentTime = ZonedDateTime.now();
 
-        DecimalFormat df2 = new DecimalFormat("#.####");
-        double dd =  ChronoUnit.SECONDS.between(lastSeenTime, currentTime) / 86400.00;
-        System.out.format("%.3f", dd);
-
-        System.out.println("\nlastSeenTime =" + lastSeenTime + "\ncurrentTime =" + currentTime);
-        System.out.println("\nDuration Seconds = " + Duration.between(lastSeenTime, currentTime).getSeconds());
-        System.out.println("\nChrono Unit Seconds = " + ChronoUnit.SECONDS.between(lastSeenTime, currentTime));
-        System.out.println("\n\nDays Gone = " + df2.format((float)ChronoUnit.SECONDS.between(lastSeenTime, currentTime)/86400));
-        System.out.format("\n\nDays Gone = %.3f", ChronoUnit.SECONDS.between(lastSeenTime, currentTime)/86400.00);
+        assertThat(ChronoUnit.SECONDS.between(lastSeenTime, currentTime), greaterThan(0L));
+        assertThat(Duration.between(lastSeenTime, currentTime).getSeconds(), greaterThan(0L));
     }
 }
