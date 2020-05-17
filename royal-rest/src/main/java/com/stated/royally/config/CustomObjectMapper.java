@@ -8,7 +8,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import kong.unirest.GenericType;
 import kong.unirest.ObjectMapper;
 import kong.unirest.UnirestException;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.io.IOException;
 import java.util.TimeZone;
@@ -21,7 +21,7 @@ import java.util.TimeZone;
  * @author Nate Vardell
  * @since 8/10/2019
  */
-@Slf4j
+@Log4j2
 public class CustomObjectMapper implements ObjectMapper {
 
     private final com.fasterxml.jackson.databind.ObjectMapper om;
