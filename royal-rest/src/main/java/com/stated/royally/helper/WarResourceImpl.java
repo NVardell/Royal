@@ -25,7 +25,7 @@ public class WarResourceImpl implements ClashResource<WarLog, String> {
     public WarLog fetch(String clanTag) {
         log.info("Getting clan war log for clanTag = #{}", clanTag);
 
-        return Unirest.get("/clans/%23" + clanTag + "/warlog?limit=3")
+        return Unirest.get("/clans/%23" + clanTag + "/warlog")
                 .asObject(WarLog.class)
                 .getBody();
     }

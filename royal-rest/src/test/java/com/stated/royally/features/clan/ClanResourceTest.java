@@ -1,6 +1,7 @@
 package com.stated.royally.features.clan;
 
 import com.stated.royally.common.clan.Clan;
+import com.stated.royally.common.clan.ClanMember;
 import com.stated.royally.common.clan.war.WarLog;
 import lombok.extern.log4j.Log4j2;
 import org.junit.Before;
@@ -16,6 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
@@ -62,6 +64,7 @@ public class ClanResourceTest {
         assertThat(clan.getName(), is("Departed"));
 
         clanInfoToCsv_forExcel(clan);
+        clanInfoMemberList_memberDonations(clan.getMemberList());
     }
 
 
@@ -121,5 +124,9 @@ public class ClanResourceTest {
 
     private String convertLastSeenTimeStampAndReturnDaysAway_long_justSeconds_noConversion(String lastSeen, ZonedDateTime currentTime) {
         return String.format("%.3f", ChronoUnit.SECONDS.between(ZonedDateTime.parse(lastSeen, DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmss.SSSz")), currentTime) / 86400.0);
+    }
+
+    private void clanInfoMemberList_memberDonations(List<ClanMember> memberList) {
+//        memberList.parallelStream().forEach(clanMember -> );
     }
 }

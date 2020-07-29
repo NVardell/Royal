@@ -513,6 +513,38 @@
             }
         },
         {
+            "name": "Firecracker",
+            "id": 26000064,
+            "maxLevel": 13,
+            "iconUrls": {
+                "medium": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
+            }
+        },
+        {
+            "name": "Elixir Golem",
+            "id": 26000067,
+            "maxLevel": 11,
+            "iconUrls": {
+                "medium": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
+            }
+        },
+        {
+            "name": "Battle Healer",
+            "id": 26000068,
+            "maxLevel": 11,
+            "iconUrls": {
+                "medium": "https://api-assets.clashroyale.com/cards/300/KdwXcoigS2Kg-cgA7BJJIANbUJG6SNgjetRQ-MegZ08.png"
+            }
+        },
+        {
+            "name": "Skeleton Dragons",
+            "id": 26000080,
+            "maxLevel": 13,
+            "iconUrls": {
+                "medium": "https://api-assets.clashroyale.com/cards/300/qPOtg9uONh47_NLxGhhFc_ww9PlZ6z3Ry507q1NZUXs.png"
+            }
+        },
+        {
             "name": "Cannon",
             "id": 27000000,
             "maxLevel": 13,
@@ -737,7 +769,7 @@
             }
         },
         {
-            "name": "Heal",
+            "name": "Heal Spirit",
             "id": 28000016,
             "maxLevel": 11,
             "iconUrls": {
@@ -750,6 +782,14 @@
             "maxLevel": 13,
             "iconUrls": {
                 "medium": "https://api-assets.clashroyale.com/cards/300/7MaJLa6hK9WN2_VIshuh5DIDfGwm0wEv98gXtAxLDPs.png"
+            }
+        },
+        {
+            "name": "Royal Delivery",
+            "id": 28000018,
+            "maxLevel": 13,
+            "iconUrls": {
+                "medium": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png"
             }
         }
     ]
