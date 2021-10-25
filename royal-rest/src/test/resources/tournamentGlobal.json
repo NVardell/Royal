@@ -1,0 +1,172 @@
+{
+    "items": [
+    {
+        "tag": "#URP2JRRCJ",
+        "title": "Triple Elixir Tournament",
+        "startTime": "20210721T080000.000Z",
+        "endTime": "20210726T080000.000Z",
+        "milestoneRewards": [
+        {
+            "wins": 1,
+            "type": "chest",
+            "chest": "Legendary"
+        },
+        {
+            "wins": 2,
+            "type": "resource",
+            "amount": 10000,
+            "resource": "gold"
+        },
+        {
+            "wins": 3,
+            "type": "tradeToken",
+            "amount": 1,
+            "rarity": "legendary"
+        },
+        {
+            "wins": 4,
+            "type": "chest",
+            "chest": "Epic"
+        },
+        {
+            "wins": 5,
+            "type": "resource",
+            "amount": 10000,
+            "resource": "gold"
+        },
+        {
+            "wins": 6,
+            "type": "tradeToken",
+            "amount": 1,
+            "rarity": "epic"
+        },
+        {
+            "wins": 7,
+            "type": "chest",
+            "chest": "Giant"
+        },
+        {
+            "wins": 8,
+            "type": "resource",
+            "amount": 10000,
+            "resource": "gold"
+        },
+        {
+            "wins": 9,
+            "type": "tradeToken",
+            "amount": 1,
+            "rarity": "rare"
+        },
+        {
+            "wins": 10,
+            "type": "chest",
+            "chest": "Kings"
+        },
+        {
+            "wins": 11,
+            "type": "resource",
+            "amount": 10000,
+            "resource": "gold"
+        },
+        {
+            "wins": 12,
+            "type": "tradeToken",
+            "amount": 1,
+            "rarity": "common"
+        },
+        {
+            "wins": 13,
+            "type": null,
+            "amount": 1
+        },
+        {
+            "wins": 14,
+            "type": "resource",
+            "amount": 10000,
+            "resource": "gold"
+        },
+        {
+            "wins": 15,
+            "type": "chest",
+            "chest": "Magic"
+        }],
+        "freeTierRewards": [
+        {
+            "wins": 1,
+            "type": "tradeToken",
+            "amount": 2,
+            "rarity": "epic"
+        },
+        {
+            "wins": 2,
+            "type": "resource",
+            "amount": 10,
+            "resource": "unknown"
+        },
+        {
+            "wins": 3,
+            "type": "tradeToken",
+            "amount": 2,
+            "rarity": "common"
+        },
+        {
+            "wins": 4,
+            "type": null,
+            "amount": 1
+        },
+        {
+            "wins": 5,
+            "type": "resource",
+            "amount": 2500,
+            "resource": "gold"
+        },
+        {
+            "wins": 6,
+            "type": "tradeToken",
+            "amount": 2,
+            "rarity": "legendary"
+        },
+        {
+            "wins": 7,
+            "type": "resource",
+            "amount": 15,
+            "resource": "unknown"
+        },
+        {
+            "wins": 8,
+            "type": null,
+            "amount": 1
+        },
+        {
+            "wins": 9,
+            "type": "tradeToken",
+            "amount": 2,
+            "rarity": "rare"
+        },
+        {
+            "wins": 10,
+            "type": "resource",
+            "amount": 2500,
+            "resource": "gold"
+        },
+        {
+            "wins": 12,
+            "type": "chest",
+            "chest": "Lightning"
+        }],
+        "topRankReward": [
+        {
+            "type": "resource",
+            "amount": 100000,
+            "resource": "gold"
+        }],
+        "maxTopRewardRank": 50,
+        "gameMode":
+        {
+            "id": 72000027
+        },
+        "maxLosses": 5,
+        "minExpLevel": 8,
+        "tournamentLevel": 9
+    }]
+}
