@@ -1,118 +1,120 @@
 {
-    "items": [
+    "items":[
         {
-            "tag": "#PPLYL09L",
-            "name": "Departed",
-            "type": "open",
-            "badgeId": 16000170,
-            "clanScore": 48487,
-            "clanWarTrophies": 1635,
-            "location": {
-                "id": 57000001,
-                "name": "North America",
-                "isCountry": false
+            "tag":"#PPLYL09L",
+            "name":"Departed",
+            "type":"open",
+            "badgeId":16000170,
+            "clanScore":48487,
+            "clanWarTrophies":1635,
+            "location":{
+                "id":57000001,
+                "name":"North America",
+                "isCountry":false
             },
-            "requiredTrophies": 3000,
-            "donationsPerWeek": 9438,
-            "clanChestLevel": 1,
-            "clanChestMaxLevel": 0,
-            "members": 49
+            "requiredTrophies":3000,
+            "donationsPerWeek":9438,
+            "clanChestLevel":1,
+            "clanChestMaxLevel":0,
+            "members":49
         },
         {
-            "tag": "#9LULR9LV",
-            "name": "DEPARTED",
-            "type": "open",
-            "badgeId": 16000030,
-            "clanScore": 49346,
-            "clanWarTrophies": 1715,
-            "location": {
-                "id": 57000116,
-                "name": "Iraq",
-                "isCountry": true,
-                "countryCode": "IQ"
+            "tag":"#9LULR9LV",
+            "name":"DEPARTED",
+            "type":"open",
+            "badgeId":16000030,
+            "clanScore":49346,
+            "clanWarTrophies":1715,
+            "location":{
+                "id":57000116,
+                "name":"Iraq",
+                "isCountry":true,
+                "countryCode":"IQ"
             },
-            "requiredTrophies": 4000,
-            "donationsPerWeek": 7924,
-            "clanChestLevel": 1,
-            "clanChestMaxLevel": 0,
-            "members": 50
+            "requiredTrophies":4000,
+            "donationsPerWeek":7924,
+            "clanChestLevel":1,
+            "clanChestMaxLevel":0,
+            "members":50
         },
         {
-            "tag": "#89LR8JG",
-            "name": "The Departed",
-            "type": "open",
-            "badgeId": 16000027,
-            "clanScore": 41250,
-            "clanWarTrophies": 1192,
-            "location": {
-                "id": 57000249,
-                "name": "United States",
-                "isCountry": true,
-                "countryCode": "US"
+            "tag":"#89LR8JG",
+            "name":"The Departed",
+            "type":"open",
+            "badgeId":16000027,
+            "clanScore":41250,
+            "clanWarTrophies":1192,
+            "location":{
+                "id":57000249,
+                "name":"United States",
+                "isCountry":true,
+                "countryCode":"US"
             },
-            "requiredTrophies": 2300,
-            "donationsPerWeek": 4342,
-            "clanChestLevel": 1,
-            "clanChestMaxLevel": 0,
-            "members": 48
+            "requiredTrophies":2300,
+            "donationsPerWeek":4342,
+            "clanChestLevel":1,
+            "clanChestMaxLevel":0,
+            "members":48
         },
         {
-            "tag": "#P8CYV0",
-            "name": "The Departed",
-            "type": "open",
-            "badgeId": 16000025,
-            "clanScore": 46367,
-            "clanWarTrophies": 1940,
-            "location": {
-                "id": 57000006,
-                "name": "International",
-                "isCountry": false
+            "tag":"#P8CYV0",
+            "name":"The Departed",
+            "type":"open",
+            "badgeId":16000025,
+            "clanScore":46367,
+            "clanWarTrophies":1940,
+            "location":{
+                "id":57000006,
+                "name":"International",
+                "isCountry":false
             },
-            "requiredTrophies": 4000,
-            "donationsPerWeek": 8108,
-            "clanChestLevel": 1,
-            "clanChestMaxLevel": 0,
-            "members": 43
+            "requiredTrophies":4000,
+            "donationsPerWeek":8108,
+            "clanChestLevel":1,
+            "clanChestMaxLevel":0,
+            "members":43
         },
         {
-            "tag": "#YGVCPGC9",
-            "name": "THE DEPARTED",
-            "type": "open",
-            "badgeId": 16000168,
-            "clanScore": 13558,
-            "clanWarTrophies": 107,
-            "location": {
-                "id": 57000006,
-                "name": "International",
-                "isCountry": false
+            "tag":"#YGVCPGC9",
+            "name":"THE DEPARTED",
+            "type":"open",
+            "badgeId":16000168,
+            "clanScore":13558,
+            "clanWarTrophies":107,
+            "location":{
+                "id":57000006,
+                "name":"International",
+                "isCountry":false
             },
-            "requiredTrophies": 0,
-            "donationsPerWeek": 20,
-            "clanChestLevel": 1,
-            "clanChestMaxLevel": 0,
-            "members": 11
+            "requiredTrophies":0,
+            "donationsPerWeek":20,
+            "clanChestLevel":1,
+            "clanChestMaxLevel":0,
+            "members":11
         },
         {
-            "tag": "#R8G2RG",
-            "name": "The Departed 2",
-            "type": "inviteOnly",
-            "badgeId": 16000113,
-            "clanScore": 46349,
-            "clanWarTrophies": 2482,
-            "location": {
-                "id": 57000249,
-                "name": "United States",
-                "isCountry": true,
-                "countryCode": "US"
+            "tag":"#R8G2RG",
+            "name":"The Departed 2",
+            "type":"inviteOnly",
+            "badgeId":16000113,
+            "clanScore":46349,
+            "clanWarTrophies":2482,
+            "location":{
+                "id":57000249,
+                "name":"United States",
+                "isCountry":true,
+                "countryCode":"US"
             },
-            "requiredTrophies": 3000,
-            "donationsPerWeek": 7718,
-            "clanChestLevel": 1,
-            "clanChestMaxLevel": 0,
-            "members": 41
+            "requiredTrophies":3000,
+            "donationsPerWeek":7718,
+            "clanChestLevel":1,
+            "clanChestMaxLevel":0,
+            "members":41
         }
     ],
-    "paging": {
-        "cursors": {}
+    "paging":{
+        "cursors":{
+            
+        }
     }
 }

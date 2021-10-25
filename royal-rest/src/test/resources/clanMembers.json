@@ -1,23 +1,5 @@
 {
-    "tag":"#PPLYL09L",
-    "name":"Departed",
-    "type":"open",
-    "description":"Welcome! Rules are simple. Donate & participate in war. Have fun, and grow a glorious mustach! 😂",
-    "badgeId":16000152,
-    "clanScore":55667,
-    "clanWarTrophies":3010,
-    "location":{
-        "id":57000006,
-        "name":"International",
-        "isCountry":false
-    },
-    "requiredTrophies":4000,
-    "donationsPerWeek":1506,
-    "clanChestStatus":"inactive",
-    "clanChestLevel":1,
-    "clanChestMaxLevel":0,
-    "members":50,
-    "memberList":[
+    "items":[
         {
             "tag":"#22UUULJL2",
             "name":"raniakyra",
@@ -151,7 +133,7 @@
             "clanRank":8,
             "previousClanRank":12,
             "donations":20,
-            "donationsReceived":56,
+            "donationsReceived":64,
             "clanChestPoints":0
         },
         {
@@ -498,7 +480,7 @@
             "tag":"#20VQ2JRJU",
             "name":"animal",
             "role":"coLeader",
-            "lastSeen":"20211025T215401.000Z",
+            "lastSeen":"20211025T223744.000Z",
             "expLevel":13,
             "trophies":5364,
             "arena":{
@@ -804,7 +786,7 @@
             "tag":"#QU9PPJ99G",
             "name":"Andrew",
             "role":"member",
-            "lastSeen":"20211025T223318.000Z",
+            "lastSeen":"20211025T224206.000Z",
             "expLevel":10,
             "trophies":4464,
             "arena":{
@@ -855,7 +837,7 @@
             "tag":"#Q0QJULJ2",
             "name":"Green Valley",
             "role":"elder",
-            "lastSeen":"20211025T222523.000Z",
+            "lastSeen":"20211025T224225.000Z",
             "expLevel":13,
             "trophies":4151,
             "arena":{
@@ -864,9 +846,14 @@
             },
             "clanRank":50,
             "previousClanRank":50,
-            "donations":38,
+            "donations":46,
             "donationsReceived":80,
             "clanChestPoints":0
         }
-    ]
+    ],
+    "paging":{
+        "cursors":{
+            
+        }
+    }
 }

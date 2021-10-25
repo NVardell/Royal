@@ -1,18 +1,17 @@
 {
-    "tag": "#P22VUYV0",
-    "name": "cob",
-    "role": "member",
-    "lastSeen": "20190814T174829.000Z",
-    "expLevel": 13,
-    "trophies": 5320,
-    "arena":
-    {
-        "id": 54000016,
-        "name": "Master II"
+    "tag":"#P22VUYV0",
+    "name":"cob",
+    "role":"coLeader",
+    "lastSeen":"20211019T174444.000Z",
+    "expLevel":13,
+    "trophies":5620,
+    "arena":{
+        "id":54000014,
+        "name":"Challenger III"
     },
-    "clanRank": 1,
-    "previousClanRank": 1,
-    "donations": 294,
-    "donationsReceived": 160,
-    "clanChestPoints": 0
+    "clanRank":9,
+    "previousClanRank":10,
+    "donations":0,
+    "donationsReceived":0,
+    "clanChestPoints":0
 }
