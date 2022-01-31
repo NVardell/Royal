@@ -23,7 +23,6 @@ local.properties
 dependency-reduced-pom.xml
 pom.xml.*
 target/
-.mvn/
 
 
 
