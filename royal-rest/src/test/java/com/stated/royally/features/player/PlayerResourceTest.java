@@ -6,15 +6,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.greaterThan;
-import static org.hamcrest.Matchers.is;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 /**
  * Unit tests of Player Resources
@@ -27,10 +31,11 @@ import static org.hamcrest.Matchers.is;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class PlayerResourceTest {
 
-    @LocalServerPort private int port;
+    @LocalServerPort private Integer port;
 
     @Autowired private TestRestTemplate testRestTemplate;
 
+    @Value("${clash.royal.dev.api.token}") String jwt;
     private static final String playerTag = "8JJRGC0Q";
     private static final String host = "http://localhost:";
 
@@ -39,16 +44,31 @@ class PlayerResourceTest {
 
     @BeforeEach
     void setUp() {
-        String baseUrl = host + port + "player";
-        playerInfoUrl = baseUrl + "/" + playerTag;
+        String baseUrl = host + port;
+        playerInfoUrl = baseUrl + "/player/" + playerTag;
     }
 
     @Test
     void getPlayer() {
-        Player player = this.testRestTemplate.getForObject(playerInfoUrl, Player.class);
+        // create headers
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        // build request
+        HttpEntity<?> request = new HttpEntity<>(headers);
+
+        ResponseEntity<Player> player = this.testRestTemplate.getRestTemplate().exchange(
+                playerInfoUrl,
+                HttpMethod.GET,
+                request,
+                Player.class, 0);
         log.info("GETTING PLAYER INFO.");
-        assertThat(player.getName(), is("Whi73Ra6617"));
-        assertThat(player.getTotalDonations(), greaterThan(100000));
-        log.info("Player = {}, Donations = {}", player.getName(), player.getTotalDonations());
+        assertThat(player.getStatusCode()).isEqualTo(HttpStatus.OK);
+    }
+
+    @Test
+    void exampleTest(@Autowired TestRestTemplate restTemplate) {
+        String body = restTemplate.getForObject(playerInfoUrl, String.class);
+        assertThat(body).isNullOrEmpty();
     }
 }
