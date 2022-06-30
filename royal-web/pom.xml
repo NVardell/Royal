@@ -73,12 +73,13 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
+                <version>${maven.exec.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>exec-web-install</id>
                         <phase>initialize</phase>
                         <configuration>
-                            <executable>npm</executable>
+                            <executable>yarn</executable>
                             <arguments>
                                 <argument>install</argument>
                                 <argument>--production=false</argument>
@@ -92,7 +93,7 @@
                         <id>exec-npm-build</id>
                         <phase>compile</phase>
                         <configuration>
-                            <executable>npm</executable>
+                            <executable>yarn</executable>
                             <arguments>
                                 <argument>run</argument>
                                 <argument>build:${build.script}</argument>
