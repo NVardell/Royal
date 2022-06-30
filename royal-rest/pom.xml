@@ -40,13 +40,12 @@
             <groupId>com.konghq</groupId>
             <artifactId>unirest-java</artifactId>
             <version>${unirest.version}</version>
-<!--            <classifier>standalone</classifier>-->
         </dependency>
         <!--    JERSEY | URI Builder    -->
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>2.31</version>
+            <version>${jersey.version}</version>
         </dependency>
 
 
@@ -94,21 +93,15 @@
 
 
         <!--    MISCELLANEOUS DEPENDENCIES    -->
-        <!--<dependency>-->
-        <!--    <groupId>org.projectlombok</groupId>-->
-        <!--    <artifactId>lombok</artifactId>-->
-        <!--    <version>${lombok.version}</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>${gson.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>28.2-jre</version>
+            <version>31.1-jre</version>
         </dependency>
 
     </dependencies>
