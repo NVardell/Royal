@@ -1,10 +1,14 @@
 package com.stated.royally.config;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.AsyncHandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,7 +24,9 @@ import java.util.stream.Collectors;
  */
 @Log4j2
 @Component
-public class InterceptorConfig extends HandlerInterceptorAdapter {
+public class InterceptorConfig implements AsyncHandlerInterceptor {
+
+    private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     /**
      * Handler for incoming web requests.
@@ -44,7 +50,7 @@ public class InterceptorConfig extends HandlerInterceptorAdapter {
                                  .params(request.getParameterMap())
                                  .build();
 
-        log.info("[preHandle] Request = " + new GsonBuilder().setPrettyPrinting().create().toJson(req));
+        log.info("[preHandle] Request = " + gson.toJson(req));
 
         return true;
     }
@@ -60,14 +66,15 @@ public class InterceptorConfig extends HandlerInterceptorAdapter {
      * @param ex In case of errors
      */
     @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws JsonProcessingException {
+        ObjectWriter objectMapper = new ObjectMapper().writerWithDefaultPrettyPrinter();
         ResponseLog res = ResponseLog.builder()
                                   .requestld(request.hashCode())
                                   .status(HttpStatus.valueOf(response.getStatus()).toString()).headers(getHeaderParameters(response))
                                   .exception(ex)
                                   .build();
 
-        log.info("[postHandle] Response = " + new GsonBuilder().setPrettyPrinting().create().toJson(res));
+        log.info("[postHandle] Response = " + objectMapper.writeValueAsString(res));
     }
 
 
@@ -86,6 +93,6 @@ public class InterceptorConfig extends HandlerInterceptorAdapter {
             HttpServletResponse res = (HttpServletResponse) o;
             return res.getHeaderNames().stream().collect(Collectors.toMap(header -> header, res::getHeader, (val1, val2) -> val1 + ", " + val2));
         }
-        return null;
+        return Collections.emptyMap();
     }
 }
