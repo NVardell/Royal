@@ -3,6 +3,7 @@ package com.stated.royally.config;
 import kong.unirest.Unirest;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -15,14 +16,15 @@ import javax.annotation.PostConstruct;
  */
 @Log4j2
 @Component
+@Configuration
 public class UniConfig {
 
     @Value("${official.resource.base}") String baseUrl;
-    @Value("${clash.royale.dev.api.token}") String jwt;
+    @Value("${clash.royal.dev.api.token}") String jwt;
 
     @PostConstruct
     public void init() {
-        log.info("Configuring Uni.");
+        log.info("\n\nConfiguring Uni. JWT = " + jwt + "\n\n");
 
         Unirest.config()
                 // Setup Metrics
