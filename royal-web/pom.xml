@@ -78,7 +78,7 @@
                         <id>exec-web-install</id>
                         <phase>initialize</phase>
                         <configuration>
-                            <executable>npm</executable>
+                            <executable>yarn</executable>
                             <arguments>
                                 <argument>install</argument>
                                 <argument>--production=false</argument>
@@ -89,10 +89,10 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>exec-npm-build</id>
+                        <id>exec-yarn-build</id>
                         <phase>compile</phase>
                         <configuration>
-                            <executable>npm</executable>
+                            <executable>yarn</executable>
                             <arguments>
                                 <argument>run</argument>
                                 <argument>build:${build.script}</argument>
