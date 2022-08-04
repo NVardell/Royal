@@ -1,4 +1,4 @@
-package com.stated.royally.config;
+package com.stated.royal.config;
 
 import kong.unirest.Unirest;
 import lombok.extern.log4j.Log4j2;

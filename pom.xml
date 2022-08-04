@@ -21,6 +21,7 @@
     <modules>
         <module>royal-parent</module>
         <module>royal-app</module>
+        <module>royal-common</module>
         <module>royal-rest</module>
         <module>royal-web</module>
     </modules>

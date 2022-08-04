@@ -1,4 +1,4 @@
-package com.stated.royally.util;
+package com.stated.royal.util;
 
 import com.google.gson.stream.JsonReader;
 import org.springframework.util.ResourceUtils;

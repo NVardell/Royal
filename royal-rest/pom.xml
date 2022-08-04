@@ -36,6 +36,13 @@
     </properties>
 
     <dependencies>
+        <!--    MODULE DEPENDENCIES    -->
+        <dependency>
+            <groupId>com.stated</groupId>
+            <artifactId>royal-common</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!--    SPRING DEPENDENCIES    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

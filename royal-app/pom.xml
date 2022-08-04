@@ -32,7 +32,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.stated.royally.RoyalApp</mainClass>
+                    <mainClass>com.stated.royal.RoyalApp</mainClass>
                 </configuration>
                 <executions>
                     <execution>

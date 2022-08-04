@@ -1,4 +1,4 @@
-package com.stated.royally.other;
+package com.stated.royal.other;
 
 import org.junit.Test;
 

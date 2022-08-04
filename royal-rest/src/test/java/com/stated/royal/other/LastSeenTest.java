@@ -1,13 +1,13 @@
-package com.stated.royally.other;
+package com.stated.royal.other;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
-import com.stated.royally.common.clan.Clan;
-import com.stated.royally.common.clan.ClanMember;
-import com.stated.royally.util.SampleDataUtil;
+import com.stated.royal.common.clan.Clan;
+import com.stated.royal.common.clan.ClanMember;
+import com.stated.royal.util.SampleDataUtil;
 import lombok.extern.log4j.Log4j2;
 import org.junit.Before;
 import org.junit.Test;

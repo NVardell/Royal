@@ -1,4 +1,4 @@
-package com.stated.royally.config;
+package com.stated.royal.config;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
