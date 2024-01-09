@@ -11,8 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RoyalApp {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RoyalApp.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(RoyalApp.class, args);
+    }
 
 }
