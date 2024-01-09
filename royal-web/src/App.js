@@ -1,6 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+async function goHome() {
+  console.log("Button Clicked ~ Running Go Home Function")
+  const response = await fetch('/api/hello');
+  // console.log(response)
+  const body = await response.json();
+  console.log(body)
+  // ... more stuff
+}
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <button onClick={goHome}>Click Me</button>
     </div>
   );
 }
