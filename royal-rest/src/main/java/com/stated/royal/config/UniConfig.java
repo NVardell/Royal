@@ -27,16 +27,21 @@ public class UniConfig {
                 // Setup Metrics
                 .instrumentWith(requestSummary -> {
                     long startNano = System.nanoTime();
-                    return (responseSummary, exception) ->
-                            log.info("path: {} status: {} time: {}",
-                                    requestSummary.getRawPath(),
-                                    responseSummary.getStatus(),
-                                    System.nanoTime() - startNano);
+                    return (responseSummary, exception) -> {
+                        if(exception != null)
+                            log.error("exception:{} message:{}", exception.getCause(), exception.getMessage());
+                        else
+                            log.info("time:{} path:{} status:{} message:{}",
+                                System.nanoTime() - startNano,
+                                requestSummary.getRawPath(),
+                                responseSummary.getStatus(),
+                                responseSummary.getStatusText());
+                    };
                 })
+                .enableCookieManagement(false)
+                .followRedirects(false)
+                .connectTimeout(15000)
                 // Set Custom Object Mapper
-                .setObjectMapper(new CustomObjectMapper())
-                // Set Default Values
-                .setDefaultHeader("Authorization", "Bearer " + jwt)
-                .defaultBaseUrl(baseUrl);
+                .setObjectMapper(new UniObjectMapper());
     }
 }
